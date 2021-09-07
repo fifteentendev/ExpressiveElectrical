@@ -1,0 +1,60 @@
+$padding: 6rem 6vw;
+$wrap-width-large: 1220px;
+$wrap-width-small: 900px;
+$nav-height: 95px;
+
+$bp-xl: 1300px;
+$bp-l: 1200px;
+$bp-m: 920px;
+$bp-s: 550px;
+
+.wrap {
+  max-width: $wrap-width-large;
+  margin: 0 auto;
+  position: relative;
+}
+.wrap-wide {
+  max-width: calc(#{$wrap-width-large} + 6rem);
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap-tight {
+  max-width: $wrap-width-small;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-pad {
+  padding: 1.5rem 6vw;
+}
+
+section,
+footer,
+.padding {
+  padding: $padding;
+}
+
+@media screen and (max-width: $bp-xl) {
+  section,
+  footer,
+  .padding {
+    height: unset;
+    min-height: 100%;
+    padding: 4rem 4vw;
+  }
+}
+@media screen and (max-width: $bp-m) {
+  section,
+  footer,
+  .padding {
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (max-width: $bp-s) {
+  section,
+  footer,
+  .padding {
+    padding: 4rem 1rem;
+  }
+}

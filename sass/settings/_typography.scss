@@ -1,0 +1,112 @@
+@import url("https://use.typekit.net/uft5hck.css");
+
+$font-primary: proxima-nova, sans-serif;
+$font-secondary: linotype-didot, serif;
+$font-headline: linotype-didot-headline, serif;
+
+$text-head: 4rem;
+$text-2xl: 3rem;
+$text-xl: 2rem;
+$text-large: 1.25rem;
+$text-small: 0.9rem;
+
+$line-height: 1.25rem;
+
+body {
+  color: $text-default;
+  font-weight: 300;
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: $line-height;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #fff;
+  margin: 1em 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+}
+
+@media screen and (max-width: $bp-m) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: $bp-s) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+.text-head {
+  font-size: $text-head;
+  line-height: 4.5rem;
+}
+.text-2xl {
+  font-size: $text-2xl;
+}
+.text-xl {
+  font-size: $text-xl;
+}
+.text-l {
+  font-size: $text-large;
+  line-height: 2.1rem;
+}
+.text-ml {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+}
+.text-s {
+  font-size: 0.85rem;
+  line-height: 2rem;
+}
+
+.text-n {
+  font-size: 1rem;
+}
+.font-secondary {
+  font-family: $font-secondary;
+  font-weight: 300;
+}

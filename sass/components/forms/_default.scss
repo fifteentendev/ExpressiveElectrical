@@ -1,0 +1,44 @@
+$form-b-radius: 5px;
+
+input:not(input[type="checkbox"]),
+textarea {
+  margin-bottom: 1rem;
+  display: block;
+  border: none;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  border-radius: $form-b-radius;
+  background-color: $grey;
+}
+
+label {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  font-family: inherit;
+  border-radius: $form-b-radius;
+}
+
+.checkers {
+  clear: both;
+  display: block;
+}
+
+.checkbox {
+  padding-left: 10px;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.checkbox input {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}

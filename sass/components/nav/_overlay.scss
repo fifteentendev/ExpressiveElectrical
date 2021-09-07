@@ -1,0 +1,86 @@
+// Sidenav Quick Settings
+$sidenav-bg: #eee;
+$sidenav-pad: 2rem 0;
+$sidenav-fontsize: $text-large;
+
+// Link Quick Settings
+$link-col: $blue;
+$link-col--active: white;
+$link-pad: 2vh 0;
+
+.sidebar__logo {
+  display: none;
+}
+@media screen and (max-width: $bp-m) {
+  .sidenav {
+    position: fixed;
+    top: 0;
+    left: -9999px;
+    width: 0%;
+    height: 100%;
+    min-height: 25rem;
+    z-index: 9999;
+    background-color: black;
+    max-width: 28rem;
+    padding: 2rem 0;
+    margin-right: 4rem;
+    border-right: 8px solid #444;
+    transition: width 0.2s ease-out;
+    .menu {
+      .page_item {
+        a {
+          // border-bottom: 1px solid $green;
+          background-color: black;
+          transition: 0.15s ease-out;
+          display: block;
+          margin-left: auto;
+          padding: 1.5rem;
+          font-family: $font-secondary;
+          font-size: 1.25rem;
+          color: white;
+          width: 100%;
+          text-align: right;
+          border-bottom: 1px solid #444a;
+          &:hover {
+            text-decoration: none;
+            background-color: $black;
+            color: $green;
+          }
+        }
+      }
+    }
+
+    .sidebar__logo {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 12rem;
+      margin: 2rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $black;
+      width: 100%;
+      height: 7rem;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 15% 29% 0% 0% / 14% 22% 0% 0%;
+      border-top: 1px solid $green;
+    }
+  }
+  .sidenav-open {
+    .sidenav {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-s) {
+  .sidenav {
+    padding: 6rem 0;
+  }
+}

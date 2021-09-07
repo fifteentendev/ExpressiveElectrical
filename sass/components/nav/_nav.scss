@@ -1,0 +1,31 @@
+$header-bg: #1a1a1a;
+
+.site-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  .flex {
+    justify-content: space-between;
+  }
+  background-color: $header-bg;
+}
+
+@media screen and (min-width: $bp-m) {
+  .page_item {
+    font-family: $font-secondary;
+    margin-left: 3vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    a {
+      color: white;
+    }
+    &:hover,
+    &--active {
+      a {
+        color: $green;
+      }
+    }
+  }
+}

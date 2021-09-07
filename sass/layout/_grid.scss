@@ -1,0 +1,44 @@
+.grid {
+  // Fallback
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-stats {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+@media screen and (min-width: $bp-m) {
+  .grid-services {
+    display: block;
+  }
+}
+
+@media screen and (max-width: $bp-l) {
+  .row-l {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: $bp-s) {
+  .grid {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: $bp-l) {
+  .grid-stats {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}

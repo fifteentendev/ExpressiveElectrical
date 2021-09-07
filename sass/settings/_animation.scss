@@ -1,0 +1,54 @@
+$transition: opacity 1.5s, transform 1.2s;
+$transition-slow: opacity 5s, transform 30s;
+
+@media screen and (min-width: $bp-s) {
+  .swipe-left {
+    transform: translateX(-100px);
+  }
+  .swipe-right {
+    transform: translateX(100px);
+  }
+  .swipe-down {
+    transform: translateY(-100px);
+  }
+  .swipe-up {
+    transform: translateY(100px);
+  }
+
+  .fade-in {
+    opacity: 0;
+  }
+}
+
+.trans {
+  transition: $transition;
+}
+.trans--slow {
+  transition: $transition-slow;
+}
+
+.appear {
+  opacity: 1;
+}
+
+.position {
+  transform: translate(0px, 0px);
+}
+
+.delay-1 {
+  transition-delay: 0.25s !important;
+}
+
+.delay-2 {
+  transition-delay: 0.5s;
+}
+
+.delay-3 {
+  transition-delay: 0.75s;
+}
+.delay-4 {
+  transition-delay: 1s;
+}
+.delay-5 {
+  transition-delay: 1.25s;
+}

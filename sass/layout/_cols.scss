@@ -1,0 +1,46 @@
+.col {
+  display: block;
+  margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.five-cols .col {
+  width: 20%;
+}
+
+.four-cols .col {
+  width: 25%;
+}
+
+.three-cols .col {
+  width: 33.33%;
+}
+
+.two-cols .col {
+  width: 50%;
+}
+
+.fifths .col {
+  width: 20%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+.one-third {
+  width: 33.33%;
+}
+
+@media only screen and (max-width: $bp-m) {
+  .two-thirds {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: $bp-s) {
+  .two-thirds {
+    width: 100%;
+  }
+}

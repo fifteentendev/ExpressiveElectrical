@@ -1,0 +1,42 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 0.5rem !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: $green !important;
+}
+
+.swiper-prev {
+  transform: rotate(180deg);
+}
+
+.swiper-next,
+.swiper-prev {
+  display: none;
+  cursor: pointer;
+  width: 2rem;
+  margin: 0 1rem;
+  svg {
+    fill: $green;
+  }
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+  @media screen and (min-width: $bp-m) {
+    display: block;
+  }
+}
+.swiper-button-disabled {
+  svg {
+    fill: #ccc;
+  }
+}

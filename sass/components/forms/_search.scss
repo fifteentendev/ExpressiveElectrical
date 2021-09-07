@@ -1,0 +1,31 @@
+.sf-field-category {
+  ul {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+
+  .sf-input-radio {
+    visibility: hidden;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .sf-label-radio {
+    cursor: pointer;
+
+    &:hover {
+      .sf-label-radio {
+      }
+    }
+  }
+  .sf-option-active {
+    .sf-label-radio {
+    }
+  }
+}
+
+li {
+  &:first-child {
+    // display: none;
+  }
+}

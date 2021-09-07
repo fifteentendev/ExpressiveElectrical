@@ -1,0 +1,51 @@
+$blue: #347b93;
+$text-default: #28354f;
+$black: #242424;
+$offblack: #101010;
+$yellow: #ffde00;
+$grey: #ececec;
+$text-grey: #959595;
+$green: #89c53f;
+$purple: blue;
+$orange: blue;
+
+:root {
+  background-color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-blue {
+  background-color: #27354f;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-orange {
+  color: $orange;
+}
+.text-purple {
+  color: $purple;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.text-white {
+  color: white;
+}

@@ -1,0 +1,52 @@
+$btn-radius: 2px;
+$btn-border: 3px solid;
+
+.btn {
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: $btn-radius;
+  font-size: 1rem;
+  border: 0;
+}
+
+a.btn {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-link,
+a.btn-link {
+  padding: 0.75rem 1.25rem;
+  background-color: $blue;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+  background-color: $green;
+  border: 4px solid black;
+  transition: border-color 0.3s ease-out;
+  i {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-color: $green;
+  }
+}

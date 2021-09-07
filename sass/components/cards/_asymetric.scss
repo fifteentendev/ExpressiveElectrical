@@ -1,0 +1,32 @@
+@media screen and (min-width: $bp-m) {
+  .asym_left {
+    .col {
+      position: relative;
+    }
+    .col:first-child {
+      bottom: -5rem;
+      right: -3rem;
+    }
+    .col:last-child {
+      top: -2rem;
+      left: -3rem;
+      z-index: 1;
+    }
+  }
+}
+@media screen and (min-width: $bp-m) {
+  .asym_right {
+    .col {
+      position: relative;
+    }
+    .col:first-child {
+      top: -2rem;
+      right: -3rem;
+      z-index: 1;
+    }
+    .col:last-child {
+      bottom: -3rem;
+      left: -3rem;
+    }
+  }
+}
